@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Virtual Assistant - Free Bootstrap 4 Template by Colorlib</title>
+    <title>COMTECH - Graphe Consommation Cleint</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -50,83 +50,20 @@
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2" style="background-image:linear-gradient(to bottom, rgba(42, 156, 67, 1), rgba(44, 173, 160, 0.80));" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-		  <div class="row no-gutters slider-text align-items-end justify-content-center">
-			<div class="col-md-9 ftco-animate mb-5 text-center">
-			  <h1 class="mb-3 bread">Nos Services</h1>
-			  <p class="breadcrumbs"><span class="mr-2"><a href="https://www.comtech-rdc.com">Accueil <i class="fa fa-chevron-right"></i></a></span> <span>Services <i class="fa fa-chevron-right"></i></span></p>
-			</div>
-		  </div>
-		</div>
-	  </section>
+    
 
 
-	  <section class="ftco-section ftco-no-pb ftco-no-pt">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url(images/COMTECH-DIA.jpg); background-size: contain !important;">
-				</div>
-				<div class="col-md-6 wrap-about pl-md-5 ftco-animate py-md-5">
-		  <div class="heading-section">
-			<h2 class="mb-4">Internet Dédié - DIA</h2>
-
-			<p>Le service COMTECH DIA vous offre la meilleure qualité d’internet disponible en RDC. Nous mettons
-				à votre disposition de l’internet à haut débit au meilleur prix du marché quel que soit l’option (radio
-				ou fibre optique).</p>
-			
-		  </div>
-		</div>
+	<section class="ftco-section ftco-no-pb ftco-no-pt">
+		<iframe  id="frame" frameborder="0" style="height: 100vh;
+		width: 100%;
+		margin-top: 100px;
+		margin-left: 100px;"
+		></iframe>
 	</section>
+	<div id="test"></div>
 
 	
-
-
-	<section class="ftco-section ftco-no-pb ftco-no-pt">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url(images/COMTECH-MPLS.jpg); background-size: contain !important;">
-				</div>
-				<div class="col-md-6 wrap-about pl-md-5 ftco-animate py-md-5">
-		  <div class="heading-section">
-			<h2 class="mb-4">Interconnexion des sites - MPLS</h2>
-
-			<p>Le service COMTECH MPLS vous permet de connecter vos sites avec une grande variété de solutions
-				en fonction de vos besoins.</p>
-			<p>Nous utilisons des installations et des Backbones développés par des ingénieurs certifiés CISCO.
-				Nous sommes par conséquent en mesure d’assurer la mise en place d’architectures de réseaux de
-				connexion complexes : Point à Point, Hub & Spoke (Réseau en toile), Full-mesh network (Réseau
-				maillé).</p>
-			<p>COMTECH est la meilleure option pour la sécurité de vos données: données financières sensibles,
-				information confidentielle, logiciel applicatif, sauvegarde de données critiques, Traffic VoIP etc…</p>
-		  </div>
-		</div>
-	</section>
-
-
-	<section class="ftco-section ftco-no-pb ftco-no-pt">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url(images/COMTECH-IP-Transit-Ser.jpg); background-size: contain !important;">
-				</div>
-				<div class="col-md-6 wrap-about pl-md-5 ftco-animate py-md-5">
-		  <div class="heading-section">
-			<h2 class="mb-4">IP Transit</h2>
-
-			<p>Le service COMTECH IP Transit fournit un accès à Internet avec une connexion non sur-souscrite,
-				haute vitesse, à faible latence et moins de houblon en utilisant le routage BGP complet</p>
-			
-		  </div>
-		</div>
-	</section>
-
-
-
-   
-
-   
-          
+    
 	  <footer class="ftco-footer ftco-section">
 		<div class="container">
 		  <div class="row mb-5">
@@ -199,18 +136,36 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
+
+
   <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
+
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
+
   <script src="js/main.js"></script>
+
+  <script>
+	var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+    }
+};
+
+	var tech = getUrlParameter('cl');
+	console.log(tech)
+	
+	var frame = document.getElementById("frame")
+	frame.setAttribute("src", "http://185.10.166.1:8817/graphs/queue/" + tech)
+  </script>
 
 
     
