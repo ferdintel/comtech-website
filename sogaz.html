@@ -54,13 +54,9 @@
 
 
 	<section class="ftco-section ftco-no-pb ftco-no-pt">
-		<iframe  id="frame" frameborder="0" style="height: 100vh;
-		width: 100%;
-		margin-top: 100px;
-		margin-left: 100px;"
-		></iframe>
+		<iframe width="100%" style="margin-top: 100px; margin-left:100px"  height="650px" frameborder="0" src="http://185.10.166.97/graphs/queue/SOGAZ/"></iframe>
 	</section>
-	<div id="test"></div>
+	
 
 	
     
@@ -144,28 +140,6 @@
 
   <script src="js/main.js"></script>
 
-  <script>
-	var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = window.location.search.substring(1),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
-
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-        }
-    }
-};
-
-	var tech = getUrlParameter('cl');
-	console.log(tech)
-	
-	var frame = document.getElementById("frame")
-	frame.setAttribute("src", "http://185.10.166.97/graphs/queue/" + tech)
-  </script>
 
 
     
