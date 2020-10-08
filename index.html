@@ -28,6 +28,8 @@
     
     <link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="scss/style.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -56,15 +58,23 @@
 	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
 	          <li class="nav-item"><a href="soon.html" class="nav-link">Réseau</a></li>
 	          
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+			  <li class="nav-item" ><a href="#" class="btn btn-primary py-3 px-4">Espace Client</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
-    <!-- END nav -->
+	<!-- END nav -->
+
+
     
-    <div class="hero-wrap" style="background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(3, 3, 3, 0.80)),
-    url('images/bg-ctc.jpg');" data-stellar-background-ratio="0.5">
+    
+	
+
+	<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": 5000  }'>
+		<div class="carousel-cell">
+			<div class="hero-wrap" style="background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(3, 3, 3, 0.80)),
+    url('images/bg-girl.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="overlay-2"></div>
       <div class="container">
@@ -78,12 +88,48 @@
           </div>
         </div>
       </div>
-      <div class="mouse">
-				<a href="#" class="mouse-icon">
-					<div class="mouse-wheel"><span class="fa fa-chevron-down"></span></div>
-				</a>
-			</div>
-    </div>
+      
+	</div>
+		</div>
+		<div class="carousel-cell">
+			<div class="hero-wrap" style="background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(3, 3, 3, 0.80)),
+    url('images/bg-ctc.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="overlay-2"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center">
+          <div class="col-md-7 ftco-animate d-flex align-items-end">
+          	<div class="text w-100">
+	            <h1 class="mb-4">Bravez les limites <br> de la connectivité.</h1> 
+	            <p class="mb-4">Nous sommes à mésure de vous connecter<br>Où que vous soyez, sur toute l'étendue de la RDC.</p>
+	            <p><a href="#" class="btn btn-primary py-3 px-4">En savoir plus</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+	</div>
+		</div>
+		<div class="carousel-cell">
+			<div class="hero-wrap" style="background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(3, 3, 3, 0.80)),
+    url('images/bg-tc.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="overlay-2"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center">
+          <div class="col-md-7 ftco-animate d-flex align-items-end">
+          	<div class="text w-100">
+	            <h1 class="mb-4">Fiabilité, Sécurité <br> Et dynamisme.</h1> 
+	            <p class="mb-4">La meilleure qualité de service, dans le strict respect des normes.<br> Nos centres d'opérations réseaux surveillerons toujours votre réseau.</p>
+	            <p><a href="#" class="btn btn-primary py-3 px-4">En savoir plus</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+	</div>	
+		</div>
+	</div>
 
 	<section class="ftco-section ftco-no-pb ">
     	<div class="container">
@@ -188,6 +234,28 @@
 			</div>
 		</section>
 
+
+		<section class="ftco-section ftco-no-pb ftco-no-pt">
+			<div class="container" style="background-color: #21bf73;">
+				<div class="row">
+					<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url(images/ctc-fa.jpg); background-size: cover !important;">
+					</div>
+					<div class="col-md-6 wrap-about pl-md-5 ftco-animate py-md-5">
+	          <div class="heading-section"  >
+	            <h2 class="mb-4" style="color: white;" >Focalisés sur votre satisfaction</h2>
+
+	            <p style="color: white;" >Nos ingénieurs sont dédiés au développement et au support de solutions réseaux sur le terrain. Et nous recrutons localement des ingénieurs certifiés CCNP.</p>
+	            <p style="color: white;" >Nous gérons toutes les situations que peuvent affronter les entreprises. Notre SLA ainsi que notre NOC 24x7  vous assurent une tranquilité d’esprit.</p>
+	          </div>
+
+	          
+					    </div>
+				  	</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
      
     <footer class="ftco-footer ftco-section">
       <div class="container">
@@ -274,6 +342,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
     
